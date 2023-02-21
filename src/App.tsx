@@ -8,6 +8,7 @@ function App() {
   return (
     <React.Fragment>
       <div>
+        wheel
         <WheelComponent />
         <LoginForm />
       </div>
