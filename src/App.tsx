@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 // import LoginForm from "./components/LoginForm";
-import WheelComponent from "./components/WheelComponent";
+import GamePageLayout from "./components/GamePageLayout";
 
 function App() {
   const [places, setPlaces] = useState<string[]>([
@@ -13,10 +13,12 @@ function App() {
     "Japanese food",
     "Pastas",
   ]);
+  const [value, setValue] = useState<string>("");
   return (
     <React.Fragment>
       <div>
-        <WheelComponent items={places} />
+        <GamePageLayout />
+
         {/* <LoginForm /> */}
       </div>
     </React.Fragment>
